@@ -33,3 +33,18 @@ Method (_DSM, 4, NotSerialized)\n
     })\n
 }\n
 end;
+
+into method label _DSM parent_label HDAU remove_entry;
+into device label HDAU insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "layout-id", Buffer() { 11, 0x00, 0x00, 0x00 },\n
+        "hda-gfx", Buffer() { "onboard-1" },\n
+        "PinConfigurations", Buffer() { },\n
+    })\n
+}\n
+end;
