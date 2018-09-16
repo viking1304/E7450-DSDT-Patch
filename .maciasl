@@ -15,9 +15,9 @@
 [15][igpu] Rename GFX0 to IGPU	graphics/graphics_Rename-GFX0.txt
 [16][igpu] Rename B0D3 to HDAU	graphics/graphics_Rename-B0D3.txt
 
-[usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
-[audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
-[misc] Poll for LID changes	misc/misc_LidPoll.txt
+[51][usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
+[52][audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
+[53][misc] Poll for LID changes	misc/misc_LidPoll.txt
 
 
 
