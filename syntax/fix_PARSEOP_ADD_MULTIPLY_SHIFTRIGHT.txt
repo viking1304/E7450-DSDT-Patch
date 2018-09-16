@@ -1,0 +1,9 @@
+into method label _CRS code_regex \)\)\s+Local0 replace_matched
+begin
+)), Local0)
+end;
+
+into method label _CRS code_regex \)\)\s+Local1 replace_matched
+begin
+)), Local1)
+end;
