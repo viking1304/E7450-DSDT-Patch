@@ -1,9 +1,6 @@
-into_all all code_regex \)\)\s+Local0 replace_matched
-begin
-), Local0)
-end;
+#fix_PARSEOP_ADD_MULTIPLY_SHIFTRIGHT.txt
 
-into_all all code_regex \)\)\s+Local1 replace_matched
+into_all all code_regex RefOf\s\((.+)\)\)\s+Local(\d) replaceall_matched
 begin
-), Local1)
+(RefOf (%1)), Local%2)
 end;
