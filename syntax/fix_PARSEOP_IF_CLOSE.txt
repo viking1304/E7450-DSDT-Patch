@@ -17,7 +17,7 @@ end;
 
 into method label _CRS code_regex \s{32}Create replace_matched
 begin
-                    Create
+\s{20}Create
 end;
 
 into method label _CRS code_regex \s{32}Store replace_matched
