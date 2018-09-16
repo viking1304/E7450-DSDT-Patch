@@ -1,0 +1,16 @@
+# into device label PXSX parent_label RP01 set_label begin PXSX end;
+into_all method parent_label RP01 code_regex PXSX replaceall_matched begin PXSX end;
+
+into device label PXSX insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+    Return (Package()\n
+    {\n
+        "compatible", Buffer() { "pci14e4,16bc" },\n
+        "name", Buffer() { "pci14e4,16bc" },\n
+        "IOName", "pci14e4,16bc",\n
+    })\n
+}\n
+end;
