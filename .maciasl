@@ -14,6 +14,7 @@
 [14][sys] Add MCHC	system/system_MCHC.txt
 [15][igpu] Rename GFX0 to IGPU	graphics/graphics_Rename-GFX0.txt
 [16][igpu] Rename B0D3 to HDAU	graphics/graphics_Rename-B0D3.txt
+[17][igpu] HD 5500 graphics	graphics/graphics_HD_5500.txt
 
 [51][usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
 [52][audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
