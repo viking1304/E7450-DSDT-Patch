@@ -68,7 +68,7 @@ Method (_DSM, 4, NotSerialized)\n
         Buffer()\n
         {\n
              "onboard-1"\n
-        },\n
+        }\n
     })\n        
 }\n
 end;
