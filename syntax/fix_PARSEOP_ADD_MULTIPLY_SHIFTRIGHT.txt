@@ -1,9 +1,9 @@
 into_all all code_regex \)\)\s+Local0 replace_matched
 begin
-)), Local0)
+), Local0)
 end;
 
 into_all all code_regex \)\)\s+Local1 replace_matched
 begin
-)), Local1)
+), Local1)
 end;
