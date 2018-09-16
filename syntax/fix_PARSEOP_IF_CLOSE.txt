@@ -15,7 +15,7 @@ begin
 Store (Zero, F0LN)
 end;
 
-into method label _CRS code_regex ^\s{32} replace_matched
+into method label _CRS code_regex ^\s{32}C replace_matched
 begin
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+                    C
 end;
