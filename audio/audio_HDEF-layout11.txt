@@ -9,27 +9,36 @@ into device label HDEF insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-    Return (Package()\n
+    If (LEqual (Arg2, Zero))\n
     {\n
-        "layout-id", Buffer() { 11, 0x00, 0x00, 0x00 },\n
-        "hda-gfx", Buffer() { "onboard-1" },\n
-        "PinConfigurations", Buffer() { },\n
-    })\n
-}\n
-end;
-
-into method label _DSM parent_label HDAS remove_entry;
-into device label HDAS insert
-begin
-Method (_DSM, 4, NotSerialized)\n
-{\n
-    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-    Return (Package()\n
+        Return (Buffer(One)\n
+        {\n
+             0x03\n 
+        })\n
+        }\n
+\n
+    Return (Package(0x04)\n
     {\n
-        "layout-id", Buffer() { 11, 0x00, 0x00, 0x00 },\n
-        "hda-gfx", Buffer() { "onboard-1" },\n
-        "PinConfigurations", Buffer() { },\n
+        "layout-id",\n
+        Buffer(0x04)\n
+        {\n
+             11, 0x00, 0x00, 0x00\n
+        },\n
+\n
+        "device-type",\n
+        Buffer (0x10)\n
+        {\n
+            "Realtek ALC 293"\n
+        },\n
+\n
+        "hda-gfx",\n
+        Buffer(0x0A)\n
+        {\n
+             "onboard-1"\n
+        },\n
+\n
+        "PinConfigurations",\n
+        Buffer (Zero){},\n
     })\n
 }\n
 end;
@@ -39,11 +48,59 @@ into device label HDAU insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-    If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
-    Return (Package()\n
+    If (LEqual (Arg2, Zero))\n
     {\n
-        "layout-id", Buffer() { 11, 0x00, 0x00, 0x00 },\n
-        "hda-gfx", Buffer() { "onboard-1" },\n
-    })\n
+        Return (Buffer(One)\n
+        {\n
+             0x03\n 
+        })\n
+        }\n
+\n
+    Return (Package(0x04)\n
+    {\n
+        "layout-id",\n
+        Buffer(0x04)\n
+        {\n
+             11, 0x00, 0x00, 0x00\n
+        },\n
+\n
+        "hda-gfx",\n
+        Buffer(0x0A)\n
+        {\n
+             "onboard-1"\n
+        },\n
 }\n
 end;
+
+# into method label _DSM parent_label HDAS remove_entry;
+# into device label HDAS insert
+# begin
+# Method (_DSM, 4, NotSerialized)\n
+# {\n
+#     If (LEqual (Arg2, Zero))\n
+#     {\n
+#         Return (Buffer(One)\n
+#         {\n
+#              0x03\n 
+#         })\n
+#         }\n
+# \n
+#     Return (Package(0x04)\n
+#     {\n
+#         "layout-id",\n
+#         Buffer(0x04)\n
+#         {\n
+#              11, 0x00, 0x00, 0x00\n
+#         },\n
+# \n
+#         "hda-gfx",\n
+#         Buffer(0x0A)\n
+#         {\n
+#              "onboard-1"\n
+#         },\n
+# \n
+#         "PinConfigurations",\n
+#         Buffer (Zero){},\n
+#     })\n
+# }\n
+# end;
