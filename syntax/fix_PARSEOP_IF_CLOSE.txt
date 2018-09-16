@@ -4,10 +4,10 @@
 into method label _CRS code_regex Store\s+\(Zero,\s+ECRW\s+\(If\s+\(PM0H\)\s+\{ replace_matched
 begin
 Store (Zero, ECRW)\n 
-}\n
+                }\n
 \n
-If (PM0H)\n
-{\n
+                If (PM0H)\n
+                {\n
 end;
 
 into method label _CRS code_regex Store\s+\(Zero,\s+F0LN\)\s+?\}\)\) replace_matched
