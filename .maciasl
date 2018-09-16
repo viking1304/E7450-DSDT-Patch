@@ -1,3 +1,26 @@
+[01][syn] Fix PARSEOP_IF/CLOSE_PAREN Errors	syntax/fix_PARSEOP_IF_CLOSE.txt
+[02][syn] Fix PARSEOP_ZERO Error (aggressive)	syntax/fix_PARSEOP_ZERO_agressive.txt
+[03][syn] Fix ADBG Error (alternate)	syntax/fix_ADBG_alternate.txt
+[04][syn] Rename _DSM methods to XDSM	syntax/rename_DSM.txt
+[05][sys] Fix _WAK Arg0 v2	system/system_WAK2.txt
+[06][sys] HPET Fix	system/system_HPET.txt
+[07][sys] SMBUS Fix	system/system_SMBUS.txt
+[08][sys] IRQ Fix	system/system_IRQ.txt
+[09][sys] RTC Fix	system/system_RTC.txt
+[10][sys] OS Check Fix (Windows 8)	system/system_OSYS_win8.txt
+[11][sys] Fix Mutex with non-zero SyncLevel	system/system_Mutex.txt
+[12][sys] * Fix PNOT/PPNT	system/system_PNOT.txt
+[13][sys] Add IMEI	system/system_IMEI.txt
+[14][sys] Add MCHC	system/system_MCHC.txt
+[15][igpu] Rename GFX0 to IGPU	graphics/graphics_Rename-GFX0.txt
+[16][igpu] Rename B0D3 to HDAU	graphics/graphics_Rename-B0D3.txt
+
+[usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
+[audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
+[misc] Poll for LID changes	misc/misc_LidPoll.txt
+
+
+
 [syn] --> Various Syntax Error Fixes	NullPatch.txt
 [syn] Fix _PLD Buffer/Package Error	syntax/fix_PLD.txt
 [syn] Fix TNOT Error	syntax/fix_TNOT.txt
