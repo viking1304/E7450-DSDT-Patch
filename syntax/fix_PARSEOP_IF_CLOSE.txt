@@ -1,0 +1,16 @@
+# Fix IASL bug on some DSDT by Jake Lo
+# https://osxlatitude.com/forums/topic/10375-how-to-fix-recent-dsdt-common-error-caused-by-iasl-bug/
+
+into method label _CRS code_regex Store\s+\(Zero,\s+ECRW\s+\(If\s+\(PM0H\)\s+\{ replace_matched
+begin
+Store (Zero, ECRW)\n 
+}\n
+\n
+If (PM0H)\n
+{\n
+end;
+
+into method label _CRS code_regex Store\s+\(Zero,\s+F0LN\)\s+?\}\)\) replace_matched
+begin
+Store (Zero, F0LN)
+end;
