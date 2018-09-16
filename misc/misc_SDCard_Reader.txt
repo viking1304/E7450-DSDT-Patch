@@ -15,17 +15,20 @@ Method (_DSM, 4, NotSerialized)\n
 \n
     Return (Package()\n
     {\n
-        "compatible", Buffer() { "pci14e4,16bc" 
-    },\n
+        "compatible",\n
+        Buffer()\n
+        {\n 
+            "pci14e4,16bc"\n 
+        },\n
 \n
         "name",\n
         Buffer()\n
         {\n
-            "pci14e4,16bc" 
+            "pci14e4,16bc"\n 
         },\n
 \n
         "IOName",\n
-        "pci14e4,16bc",\n
+        "pci14e4,16bc"\n
     })\n
 }\n
 end;
