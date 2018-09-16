@@ -1,0 +1,41 @@
+#graphics_HD_5500.txt
+
+#
+# Use this patch if your laptop has HD 5500 graphics
+#
+
+into method label _DSM parent_adr 0x00020000 remove_entry;
+into device name_adr 0x00020000 insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+    If (LEqual (Arg2, Zero))\n
+    {\n
+        Return (Buffer()\n
+        {\n
+             0x03\n 
+        })\n
+    }\n
+\n
+    Return (Package()\n
+    {\n
+        "AAPL,ig-platform-id",\n
+        Buffer()\n
+        {\n
+             0x06, 0x00, 0x26, 0x16\n
+        },\n
+\n
+        "hda-gfx",\n
+        Buffer()\n
+        {\n
+             "onboard-1"\n
+        },\n
+\n
+        "model",\n
+        Buffer()\n
+        {\n
+             "Intel HD 5500"\n
+        },\n        
+    })\n
+}\n
+end;
