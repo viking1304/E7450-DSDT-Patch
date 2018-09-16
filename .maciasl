@@ -9,17 +9,17 @@
 [09][sys] RTC Fix	system/system_RTC.txt
 [10][sys] OS Check Fix (Windows 8)	system/system_OSYS_win8.txt
 [11][sys] Fix Mutex with non-zero SyncLevel	system/system_Mutex.txt
-[12][sys] * Fix PNOT/PPNT	system/system_PNOT.txt
+[12][sys] Fix PNOT/PPNT	system/system_PNOT.txt
 [13][sys] Add IMEI	system/system_IMEI.txt
 [14][sys] Add MCHC	system/system_MCHC.txt
 [15][igpu] Rename GFX0 to IGPU	graphics/graphics_Rename-GFX0.txt
 [16][igpu] Rename B0D3 to HDAU	graphics/graphics_Rename-B0D3.txt
 [17][igpu] HD 5500 graphics	graphics/graphics_HD_5500.txt
-
-[51][usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
-[52][audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
-[53][misc] Poll for LID changes	misc/misc_LidPoll.txt
-[54][misc] SDCard Reader	misc/misc_SDCard_Reader.txt
+[18][usb] USB3 _PRW 0x6D (instant wake)	usb/usb_prw_0x6d_xhc.txt
+[19][audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
+[20][misc] SDCard Reader	misc/misc_SDCard_Reader.txt
+[21][gfx0] Disable from _INI (SSDT)	graphics/graphics_INI-disable.txt
+[22][misc] * Poll for LID changes	misc/misc_LidPoll.txt
 
 
 [syn] --> Various Syntax Error Fixes	NullPatch.txt
