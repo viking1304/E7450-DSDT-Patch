@@ -35,7 +35,7 @@ Method (_DSM, 4, NotSerialized)\n
         Buffer()\n
         {\n
              "Intel HD 5500"\n
-        },\n        
+        }\n        
     })\n
 }\n
 end;
