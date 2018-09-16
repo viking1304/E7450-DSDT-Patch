@@ -7,7 +7,7 @@ Method (_DSM, 4, NotSerialized)\n
 {\n
     If (LEqual (Arg2, Zero))\n
     {\n
-        Return (Buffer()
+        Return (Buffer()\n
         {\n
             0x03\n 
         })\n 
