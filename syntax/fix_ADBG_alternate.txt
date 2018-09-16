@@ -1,0 +1,4 @@
+#fix_ADBG_alternate.txt
+# Alternate ADBG fix, just remove Arg0
+
+into method label ADBG code_regex Arg0 remove_matched;
