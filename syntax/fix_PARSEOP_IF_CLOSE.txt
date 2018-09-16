@@ -14,3 +14,8 @@ into method label _CRS code_regex Store\s+\(Zero,\s+F0LN\)\s+?\}\)\) replace_mat
 begin
 Store (Zero, F0LN)
 end;
+
+into method label _CRS code_regex  {32} replace_matched
+begin
+                    
+end;
