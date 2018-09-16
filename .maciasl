@@ -20,7 +20,7 @@
 [20][misc] SDCard Reader	misc/misc_SDCard_Reader.txt
 [21][gfx0] Disable from _INI (SSDT)	graphics/graphics_INI-disable.txt
 [22][misc] * Poll for LID changes	misc/misc_LidPoll.txt
-
+[23][syn] Fix PARSEOP_ADD/MULTIPLY_SHIFTRIGHT Errors	syntax/fix_PARSEOP_ADD_MULTIPLY_SHIFTRIGHT.txt
 
 [syn] --> Various Syntax Error Fixes	NullPatch.txt
 [syn] Fix _PLD Buffer/Package Error	syntax/fix_PLD.txt
