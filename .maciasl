@@ -18,8 +18,9 @@
 [19][audio] Audio Layout 11	audio/audio_HDEF-layout11.txt
 [20][misc] SDCard Reader	misc/misc_SDCard_Reader.txt
 [21][gfx0] Disable/Enable on _WAK/_PTS (DSDT)	graphics/graphics_PTS_WAK-disable.txt
-[22][gfx0] Disable from _INI (SSDT)	graphics/graphics_INI-disable.txt
-[23][misc] * Poll for LID changes	misc/misc_LidPoll.txt
+[22][gfx0] Cleanup/Fix Errors (SSDT)	graphics/graphics_SSDT-disable-cleanup.txt
+[23][gfx0] Disable from _INI (SSDT)	graphics/graphics_INI-disable.txt
+[24][misc] * Poll for LID changes	misc/misc_LidPoll.txt
 
 [91][syn] Fix ADBG Error (alternate)	syntax/fix_ADBG_alternate.txt
 [92][syn] Fix PARSEOP_ADD/MULTIPLY_SHIFTRIGHT Errors	syntax/fix_PARSEOP_ADD_MULTIPLY_SHIFTRIGHT.txt
